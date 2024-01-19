@@ -1,0 +1,749 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+img {
+max-width: 100%;
+}
+.wrapper {
+    max-width: 1100px;
+    margin-inline: auto;
+}
+/* menu-bar */
+.menu-bar {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.logo-name h1 {
+    color: #050505;
+    font-size: 2rem;
+}
+.logo-name span {
+    color: #FF5400;
+    font-size: 2rem;
+}
+.menu-item {
+    display: flex;
+}
+.menu-item ul {
+    display: flex;
+    align-items: center;
+}
+.menu-item ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+/* .menu-item ul li :nth-child(1) {
+    color: red;
+} */
+.menu-item ul li a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.menu-item ul li a.active {
+    color: #FF5400;
+}
+.menu-item ul li a:hover {
+    color: #FF5400;
+}
+.ham-burger {
+    width: 30px;
+    height: 30px;
+}
+.menu-item .ham-burger {
+    display: none;
+}
+/* header */
+#header {
+   width: 100%;
+   height: 500px;
+   border-radius: 16px;
+   background:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("./Images/Group\ 13\ \(1\)\ \(1\).png");
+   background-repeat: no-repeat;
+   object-fit: cover;
+}
+  
+.travel-info {
+    text-align: center;
+    padding-top: 8%;
+}
+.travel-info h1 {
+    font-size: 2rem;
+    color: white;
+    padding: 20px 0;
+}
+.travel-info p {
+    font-size: .9rem;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 9%;
+}
+#header .travel-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    margin: 0 auto;
+    width: 80%;
+    gap: 30px;
+}
+.travel-box .box {
+    width: 174px;
+    height: 42px;
+    padding: 8px 20px;
+    border-radius: 8px;
+    background: #FFF;
+}
+.travel-box .box i {
+    padding-right: 10px;
+}
+.travel-box span {
+    text-align: right;
+}
+.travel-box .box span {
+   font-size: 13px
+}
+.travel-box .search {
+    color: white;
+    font-size: 15px;
+    background: #FF5400
+    
+}
+.travel-box select {
+    border: none;
+    outline: none;
+}
+/* tour */
+.tour {
+    padding: 40px 0;
+    display: flex;
+    gap: 20px;
+}
+.tour .tour-box h1 {
+    font-size: 2rem;
+    color: black;
+    padding: 10px 0;
+}
+.tour .tour-box p {
+    color: rgb(99, 99, 98);
+}
+.tour .tour-box .item-list {
+    padding: 12px 0;
+}
+.tour .tour-box .item-list li{
+    padding: 10px 0;
+    color: rgb(99, 99, 98);
+}
+.tour .tour-box .button {
+    margin-top: 10px;
+    padding: 10px 30px;
+    background: #FF5400;
+    color: #FFF;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+}
+.destination {
+    padding: 40px 0;
+}
+.destination .des-info {
+    text-align: center;
+}
+.destination .des-info h1{
+    font-size: 2rem;
+    color: black;
+    padding: 8px 0;
+}
+.destination .des-info p{
+    font-size: .9rem;
+    color: rgb(72, 71, 71);
+    padding: 8px 0;
+}
+.destination .destination-img img {
+    width: 100%;
+}
+button {
+    cursor: pointer;
+}
+.destination-img {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 15px;
+}
+.desti-img h1 {
+    position: relative;
+    bottom: 50%;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+}
+.srilanka h1 {
+    position: relative;
+    bottom: 50%;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+}
+.north-america h1 {
+    position: relative;
+    bottom: 50%;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+}
+.maldives {
+  
+    grid-column: 1 / 7;
+}
+.indonesia {
+    grid-column: 7 / 13;
+}
+.srilanka {
+   grid-column: 1 / 4;
+}
+.north-america {
+    grid-column: 4 / 9;
+}
+.kashmir {
+    grid-column: 9 / 13;
+    grid-row: 2 / 3;
+}
+.bangladesh {
+    grid-column: 1 / 6;
+}
+.bandorban {
+    grid-column: 6/ 13;
+}
+.srilanka img {
+    height: 207px;
+}
+.kashmir img {
+    height: 207px;
+}
+.north-america img {
+    height: 207px;
+}
+/* 
+discover */
+.discover {
+    padding: 40px 0;
+}
+.discover p {
+    font-size: .9rem;
+    color: #717174;
+    padding: 5px 0;
+    text-align: center;
+}
+.discover h1 {
+    font-size: 1.6rem;
+    color: #060606;
+    padding: 5px 0;
+    text-align: center;
+}
+.discover .divider {
+  margin: 0 auto;
+    height: 3px;
+    width: 248px;
+    background: #FF5400;
+}
+.package {
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   align-items: center;
+   margin-top: 40px;
+}
+.package-box img {
+    width: 300px;
+    height: 380px;
+}
+.package-box {
+    text-align: center;
+    background: #fefefe;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.package-box .package-info {
+    text-align: center;
+    
+}
+.package-box .package-info p {
+    font-size: 1rem;
+    color: rgb(101, 98, 98);
+    padding: 10px 0;
+}
+.package-box .package-info h1 {
+    font-size: 1.2rem;
+    color: black;
+}
+.package-box .package-info h5 {
+    font-size: .8rem;
+    padding-bottom: 5px;
+    color: rgb(101, 100, 100);
+}
+.package-box .package-info .ratting {
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.package-box .package-info i {
+    color: rgb(236, 165, 10);
+}
+/* why-chose */
+.why-chose {
+    padding: 40px 0;
+}
+.why-chose .chose-title {
+    text-align: center;
+}
+.why-chose .chose-title h1{
+   font-size: 2rem;
+   color: black;
+}
+.why-chose .chose-title p{
+    padding: 10px 0;
+    color: rgba(19, 19, 24, 0.70);
+}
+.why-chose-box .chose-box img {
+    font-size: 2rem;
+    color: #FF5400;
+    padding: 20px 15px;
+}
+.why-chose-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+.why-chose-box .chose-box h1 {
+    padding: 20px 15px;
+    font-size: 1.5rem;
+}
+.why-chose-box .chose-box p {
+    padding: 20px 15px;
+    font-size: .9rem;
+    color: rgb(70, 69, 69);
+}
+.why-chose-box .c-box-1 {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+.why-chose-box .c-box-2 {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.w-box {
+   margin: 0 auto;
+    margin-top: 20px;
+    width: 600px;
+}
+.w-box .chose-box {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+.w-box .chose-box img {
+    font-size: 2rem;
+    color: #FF5400;
+    padding: 20px 15px;
+}
+.w-box .chose-box h1 {
+    padding: 20px 15px;
+    font-size: 1.5rem;
+}
+.w-box .chose-box p {
+    padding: 20px 15px;
+    font-size: .9rem;
+    color: rgb(70, 69, 69);
+}
+
+.deal-discount {
+   padding-top: 30px;
+}    
+.deal-discount h1 {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+}
+.deal-discount p {
+    color: rgb(66, 64, 64);
+    text-align: center;
+    font-size: .9rem;
+    padding: 10px 0;
+}
+.discount-image .button {
+    margin-left: 45%;
+    color: white;
+    background: #FF5400;
+    padding: 10px 24px;
+    border: none;
+}
+.discount-image {
+    padding: 30px 0;
+}
+.discount-image .deals-image {
+    margin-bottom: 20px;
+}
+.deals-image {
+    width: 100%;
+}
+.deals-image {
+    position: relative;
+}
+.discount-box {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 500px;
+    height: 300px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+}
+.delas-img-2 {
+    position: relative;
+}
+.discount-box-2 {
+    position: absolute;
+    left: 5%;
+}
+.discount-box .discount-info {
+    padding: 30px 20px;
+}
+.discount-box .discount-info li {
+    list-style: none;
+    color: #FF5400;
+}
+.discount-box .discount-info li span {
+    text-transform: capitalize;
+    color: #5A5A5D;
+}
+.discount-box .discount-info .discount-list {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.discount-box .discount-info h1, h3, h2, .button  {
+    text-align: left;
+}
+.discount-box .discount-info h1 {
+    color: #131318;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.discount-box .discount-info h3 {
+    color: #292930;
+    font-size: 15px;
+    padding: 10px 0;
+}
+.discount-box .discount-info h2  {
+    color: #FF5400;
+    font-size: 15px;
+    padding: 10px 0;
+}
+.discount-box .discount-info .btn {
+    background: #FF5400;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+}
+/* perfect-place */
+.perfect-place {
+    padding: 40px 0;
+    display: flex;
+    gap: 20px;
+}
+.perfect-place .perfect-box .per-info h1 {
+    font-size: 1.9rem;
+    color: black;
+    padding: 10px 0;
+}
+.perfect-place .perfect-box .per-info p {
+    font-size: .9rem;
+    color: rgb(94, 92, 92);
+    padding: 10px 0;
+}
+.perfect-place .per-list li{
+    padding: 8px 0;
+    color: rgb(31, 30, 30);
+    
+}
+.perfect-place .perfect-box .button {
+    padding: 10px 24px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+/* newsletter */
+.newsletter {
+    display: flex;
+    gap: 25px;
+    padding: 40px 0;
+}
+hr {
+    margin-bottom: 30px;
+}
+.news-box {
+    width: 35%;
+}
+.img-box {
+    width: 65%;
+}
+.newsletter .news-box {
+    padding: 20px 20px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+.newsletter .news-box h1 {
+    font-size: 1.8rem;
+    color: black;
+    padding: 10px 0;
+}
+.newsletter .news-box .sub-btn {
+    text-align: center;
+    padding: 12px 24px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    background: #FF5400;
+    color: white;
+    margin-top: 20px;
+}
+.newsletter .news-box p {
+    color: rgb(60, 59, 59);
+    padding-bottom: 20px;
+}
+.newsletter .news-box input {
+    border: none;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    padding: 10px 10px;
+    display: block;
+    width: 100%;
+    outline: none;
+    margin-bottom: 20px;
+}
+input::placeholder {
+    color: rgb(137, 135, 132);
+    padding: 10px 8px;
+}
+.newsletter .img-box img {
+    width: 672px;
+    height: 422px;
+}
+.newsletter .img-box {
+    position: relative;
+}
+.newsletter .img-box .save-box {
+   position: absolute;
+    top: 70%;
+    left: 60%;
+    border-radius: 16px;
+    background: #FF5400;
+    width: 240px;
+    height: 90px;
+    transform: rotate(-19.628deg);
+    text-align: center;
+    color: white;
+}
+.newsletter .img-box .save-box p {
+    font-size: 15px;
+    padding: 9px 0;
+}
+.newsletter .img-box .save-box h1 {
+    font-size: 1.4rem;
+}
+/* footer */
+footer {
+    background: rgba(19, 19, 24, 0.05);
+    height: 400px;
+    text-align: center;
+}
+footer li {
+    list-style: none;
+}
+.foot-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.footer-content li {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.footer-content span {
+    color: #FF5400;
+}
+.footer-content {
+    padding-top: 40px;
+}
+.footer-content p{
+   color: #5A5A5D;
+   padding: 10px 0;
+}
+.footer-content .foot-icon {
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: all 3s ease-in-out;
+}
+.footer-content .foot-icon li:hover {
+    color: #FF5400;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 992px) {
+     .wrapper {
+        max-width: 800px;
+    }
+
+    .travel-box {
+        flex-direction: column;
+        padding: 0 0;
+    }
+    footer {
+        padding: 0 90px;
+    }
+    .discount-box {
+        top: 8%;
+        right: 30%;
+        width: 390px;
+        height: 300px;
+    }
+    .newsletter .img-box .save-box {
+        position: absolute;
+         top: 75%;
+         left: 60%;
+         border-radius: 16px;
+         background: #FF5400;
+         width: 160px;
+         height: 70px;
+         transform: rotate(-19.628deg);
+         text-align: center;
+         color: white;
+     }
+     .newsletter .img-box .save-box h1 {
+        font-size: .8rem;
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        max-width: 480px;
+    }
+    
+    .menu-item li {
+        display: none;
+    }
+    .menu-item .ham-burger {
+        display: block;
+        color: black;
+    }
+    #header {
+        flex-direction: column;
+    }
+    .travel-box {
+        flex-direction: column;
+       
+    }
+    #header .travel-box {
+       display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    margin-top: 1%;
+    gap: 10px;
+    }
+    
+    .tour {
+        flex-direction: column;
+    }
+    .why-chose-box {
+        grid-template-columns: repeat(1, 1fr);
+      
+    }
+    .perfect-place {
+      flex-direction: column;
+    }
+    .newsletter {
+      flex-direction: column;
+    }
+    .news-box,
+    .img-box
+     {
+        width: 100%;
+    }
+    .newsletter .img-box .save-box {
+        position: absolute;
+         top: 75%;
+         left: 60%;
+         border-radius: 16px;
+         background: #FF5400;
+         width: 160px;
+         height: 70px;
+         transform: rotate(-19.628deg);
+         text-align: center;
+         color: white;
+     }
+     .newsletter .img-box .save-box p {
+        font-size: 10px;
+        padding: 5px 0;
+    }
+    .newsletter .img-box .save-box h1 {
+        font-size: .9rem;
+    }
+    .destination-img {
+        grid-template-columns: repeat(1, 1fr);
+      
+    
+    }
+    .package {
+       flex-direction: column;
+     }
+     .deals-image {
+        width: 100%;
+      
+    }
+    .deals-image img{
+        width: 100%;
+        height: 500px;
+    }
+    .discount-box {
+        top: 30%;
+        left: 10%;
+        width: 400px;
+        height: 300px;
+    }
+    .destination-img {
+        grid-template-columns: repeat(4, 1fr);    
+    }
+  
+}
